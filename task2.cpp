@@ -2,7 +2,6 @@
 #include <string>
 using namespace std;
 
-// Template function for selection sort
 template <typename T>
 void selectionSort(T arr[], int n) 
 {
@@ -16,12 +15,10 @@ void selectionSort(T arr[], int n)
 				SmallSub = j;
 			}
 		}
-		// Swap the found minimum element with the first element
 		swap(arr[i], arr[SmallSub]);
 	}
 }
 
-// Template function to print an array
 template <typename T>
 void printArray(T arr[], int n) 
 {
@@ -32,10 +29,8 @@ void printArray(T arr[], int n)
 	cout << endl;
 }
 
-// Main function for testing
 int main() 
 {
-	// Test with an integer array of size 5
 	int intArray[5] = { 64, 25, 12, 22, 11 };
 	cout << "Original integer array: ";
 	printArray(intArray, 5);
@@ -43,7 +38,6 @@ int main()
 	cout << "Sorted integer array: ";
 	printArray(intArray, 5);
 
-	// Test with a string array of size 4
 	string stringArray[4] = { "apple", "orange", "banana", "grape" };
 	cout << "\nOriginal string array: ";
 	printArray(stringArray, 4);
